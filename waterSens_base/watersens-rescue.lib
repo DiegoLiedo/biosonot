@@ -1,0 +1,42 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# POT-RESCUE-watersens
+#
+DEF POT-RESCUE-watersens RV 0 40 N N 1 F N
+F0 "RV" -175 0 50 V V C CNN
+F1 "POT-RESCUE-watersens" -100 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 40 100 -40 -100 0 1 10 N
+P 2 0 1 0 100 0 60 0 N
+P 3 0 1 0 45 0 90 20 90 -20 F
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 150 0 50 L 50 50 1 1 P
+X 3 3 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# R-RESCUE-watersens
+#
+DEF R-RESCUE-watersens R 0 0 N Y 1 F N
+F0 "R" 80 0 40 V V C CNN
+F1 "R-RESCUE-watersens" 7 1 40 V V C CNN
+F2 "" -70 0 30 V V C CNN
+F3 "" 0 0 30 H V C CNN
+$FPLIST
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$ENDFPLIST
+DRAW
+S -40 150 40 -150 0 1 12 N
+X ~ 1 0 250 100 D 60 60 1 1 P
+X ~ 2 0 -250 100 U 60 60 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
